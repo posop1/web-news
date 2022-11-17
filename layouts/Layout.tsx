@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import s from '../styles/app.module.scss'
 
 interface LayoutProps {
   title?: string
@@ -19,7 +20,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
           content="width=device-width, initial-scale=1"
         />
       </Head>
-      <div className="app">{children}</div>
+      <div className={s.app}>{children}</div>
     </>
   )
 }
