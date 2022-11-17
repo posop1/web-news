@@ -1,6 +1,5 @@
 import { FC } from 'react'
 import Layout from '../layouts/Layout'
-import '../styles/Home.module.scss'
 
 const Home: FC = () => {
   return (
