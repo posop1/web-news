@@ -1,5 +1,5 @@
 import Layout from '../layouts/Layout'
-import s from '../styles/ErrorPage.module.scss'
+import s from '../styles/otherPage/ErrorPage.module.scss'
 
 const ErrorPage500: React.FC = () => {
   return (
