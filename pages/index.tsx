@@ -1,11 +1,12 @@
 import { FC } from 'react'
+import NewsList from '../components/NewsList'
 import Layout from '../layouts/Layout'
 
 const Home: FC = () => {
   return (
     <>
       <Layout>
-        <h1>asd</h1>
+        <NewsList title="Test" />
       </Layout>
     </>
   )
