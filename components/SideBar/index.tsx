@@ -10,14 +10,17 @@ const SideBar: React.FC = () => {
 
   return (
     <div className={s.sidebar}>
-      <div className={s.logo__container}>
+      <Link
+        href="/"
+        className={s.logo__container}
+      >
         <Image
           src={logo}
           alt="logo"
           width="29"
         />
         <h1 className={s.title}>Aster News</h1>
-      </div>
+      </Link>
       <div className={s.links}>
         {routes.map((link) => (
           <Link
