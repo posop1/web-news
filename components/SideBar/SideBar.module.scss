@@ -1,10 +1,11 @@
 .sidebar {
-  padding: 21px 31px;
+  padding: 21px 0px;
 }
 
 .logo__container {
   display: flex;
   align-items: center;
+  padding-left: 31px;
 }
 .title {
   font-weight: 700;
@@ -12,4 +13,52 @@
   line-height: 21px;
   color: #0768b5;
   margin-left: 15px;
+}
+
+.links {
+  margin-top: 35px;
+
+  .link {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    p {
+      margin-left: 20px;
+    }
+
+    padding: 16px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #072d4b;
+  }
+}
+.active {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  background: rgba(47, 159, 248, 0.1);
+  border-radius: 0px 37px 37px 0px;
+
+  p {
+    margin-left: 20px;
+  }
+
+  padding: 16px 0;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+
+  /* sky blue */
+
+  color: #2f9ff8;
+}
+.link__container {
+  display: flex;
+  align-items: center;
+  padding-left: 31px;
+  padding-right: 90px;
 }

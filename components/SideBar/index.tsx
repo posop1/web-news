@@ -1,10 +1,13 @@
 import Image from 'next/image'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 import logo from '../../public/logo.svg'
+import { routes } from '../../utils/constans'
 import s from './SideBar.module.scss'
 
-interface SideBarProps {}
+const SideBar: React.FC = () => {
+  const router = useRouter()
 
-const SideBar: React.FC<SideBarProps> = () => {
   return (
     <div className={s.sidebar}>
       <div className={s.logo__container}>
@@ -14,6 +17,20 @@ const SideBar: React.FC<SideBarProps> = () => {
           width="29"
         />
         <h1 className={s.title}>Aster News</h1>
+      </div>
+      <div className={s.links}>
+        {routes.map((link) => (
+          <Link
+            key={link.name}
+            href={link.route}
+            className={router.pathname == link.route ? s.active : s.link}
+          >
+            <div className={s.link__container}>
+              <link.component size={23} />
+              <p>{link.name}</p>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
   )
