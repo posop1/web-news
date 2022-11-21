@@ -25,7 +25,7 @@ const SideBar: React.FC = () => {
         {routes.map((link) => (
           <Link
             key={link.name}
-            href={link.route}
+            href={link.pageName}
             className={router.pathname == link.route ? s.active : s.link}
           >
             <div className={s.link__container}>
