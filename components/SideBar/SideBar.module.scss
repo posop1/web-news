@@ -1,11 +1,15 @@
 .sidebar {
   padding: 21px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo__container {
   display: flex;
   align-items: center;
   padding-left: 31px;
+  align-self: flex-start;
 }
 .title {
   font-weight: 700;
@@ -32,6 +36,14 @@
     font-size: 15px;
     line-height: 18px;
     color: #072d4b;
+    margin-bottom: 15px;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+      background: rgba(47, 159, 248, 0.1);
+      border-radius: 0px 37px 37px 0px;
+      color: #2f9ff8;
+    }
   }
 }
 .active {
@@ -61,4 +73,10 @@
   align-items: center;
   padding-left: 31px;
   padding-right: 90px;
+}
+.hr {
+  height: 2.5px;
+  border-radius: 50%;
+  width: 80%;
+  background: #0768b5;
 }
