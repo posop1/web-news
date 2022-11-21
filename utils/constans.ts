@@ -5,22 +5,25 @@ import { MdOutlineBusinessCenter, MdOutlineHealthAndSafety } from 'react-icons/m
 import { IRoute } from '../types/types'
 
 export const routes: IRoute[] = [
-  { route: '/', name: 'Top News', component: FiHome },
+  { route: '/', name: 'Top News', component: FiHome, pageName: '' },
   {
-    route: '/news/business',
+    route: '/business',
     name: 'Business',
-    component: MdOutlineBusinessCenter
+    component: MdOutlineBusinessCenter,
+    pageName: 'business'
   },
   {
-    route: '/news/health',
+    route: '/health',
     name: 'Health',
-    component: MdOutlineHealthAndSafety
+    component: MdOutlineHealthAndSafety,
+    pageName: 'health'
   },
   {
-    route: '/news/entertainment',
+    route: '/entertainment',
     name: 'Entertainment',
-    component: FiPlay
+    component: FiPlay,
+    pageName: 'entertainment'
   },
-  { route: '/news/sports', name: 'Sports', component: IoMedalOutline },
-  { route: '/news/covid', name: 'Covid', component: GiHealthNormal }
+  { route: '/sports', name: 'Sports', component: IoMedalOutline, pageName: 'sports' },
+  { route: '/covid', name: 'Covid', component: GiHealthNormal, pageName: 'covid' }
 ]
