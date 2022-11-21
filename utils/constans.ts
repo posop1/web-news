@@ -5,7 +5,6 @@ import { MdOutlineBusinessCenter, MdOutlineHealthAndSafety } from 'react-icons/m
 import { IRoute } from '../types/types'
 
 export const routes: IRoute[] = [
-  { route: '/', name: 'Top News', component: FiHome, pageName: '' },
   {
     route: '/business',
     name: 'Business',
