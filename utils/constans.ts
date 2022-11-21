@@ -9,21 +9,18 @@ export const routes: IRoute[] = [
   {
     route: '/news/business',
     name: 'Business',
-    component: MdOutlineBusinessCenter,
-    pageName: 'business'
+    component: MdOutlineBusinessCenter
   },
   {
     route: '/news/health',
     name: 'Health',
-    component: MdOutlineHealthAndSafety,
-    pageName: 'health'
+    component: MdOutlineHealthAndSafety
   },
   {
     route: '/news/entertainment',
     name: 'Entertainment',
-    component: FiPlay,
-    pageName: 'entertainment'
+    component: FiPlay
   },
-  { route: '/news/sports', name: 'Sports', component: IoMedalOutline, pageName: 'sports' },
-  { route: '/news/covid', name: 'Covid', component: GiHealthNormal, pageName: 'covid' }
+  { route: '/news/sports', name: 'Sports', component: IoMedalOutline },
+  { route: '/news/covid', name: 'Covid', component: GiHealthNormal }
 ]
