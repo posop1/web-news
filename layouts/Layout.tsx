@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import SearchBar from '../components/SearchBar'
 import SideBar from '../components/SideBar'
 import s from '../styles/app.module.scss'
 
@@ -23,7 +24,10 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
       </Head>
       <div className={s.app}>
         <SideBar />
-        {children}
+        <div className={s.main}>
+          <SearchBar />
+          {children}
+        </div>
       </div>
     </>
   )

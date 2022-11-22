@@ -1,0 +1,54 @@
+.SearchBar {
+  padding: 15px 0;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  margin-left: 50px;
+  align-items: center;
+}
+.bar__inp {
+  padding: 14px;
+  border: none;
+  background: rgba(47, 159, 248, 0.04);
+  border-radius: 4px;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  input {
+    background: none;
+    outline: none;
+    width: 100%;
+    border: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #072d4b;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+.covid__link {
+  padding: 13px;
+  background: #f4f9f8;
+  border: 0.2px solid #072d4b;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 256px;
+  width: 100%;
+  margin-left: 30px;
+
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #072d4b;
+
+    span {
+      color: #2f9ff8;
+    }
+  }
+}
