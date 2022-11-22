@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { ucs2 } from 'punycode'
 import { GetServerSideProps } from 'next'
 import NewsList from '../components/NewsList'
@@ -11,10 +12,10 @@ interface NewsPagesProps {
 
 export const getServerSideProps: any = async (context: any) => {
   const { pageName } = context.params
-  const res = await fetch(
+
+  const { data } = await axios.get(
     `https://newsapi.org/v2/everything?q=${pageName}&apiKey=64a74bc147c14569bd3b46602f5cde5f`
   )
-  const data = await res.json()
 
   if (!data) {
     return {
