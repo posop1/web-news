@@ -10,7 +10,7 @@ interface HomePageProps {
 
 export const getStaticProps = async () => {
   const { data } = await axios.get(
-    'https://newsapi.org/v2/top-headlines?country=ru&pageSize=20&apiKey=64a74bc147c14569bd3b46602f5cde5f'
+    'https://newsapi.org/v2/top-headlines?country=ru&page=1&pageSize=20&apiKey=64a74bc147c14569bd3b46602f5cde5f'
   )
 
   if (!data) {
@@ -25,6 +25,8 @@ export const getStaticProps = async () => {
 }
 
 const Home: FC<HomePageProps> = ({ news }) => {
+  console.log(news)
+
   return (
     <Layout title="Top News">
       <NewsList
