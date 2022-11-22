@@ -1,0 +1,48 @@
+.EmailBage {
+  margin-top: 15px;
+  margin-right: 30px;
+  background: #ffffff;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-width: 285px;
+}
+.EmailBage__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #072d4b;
+  margin-bottom: 15px;
+}
+
+.EmailBage__inp {
+  background: #f4f9f8;
+  border: 0.1px solid #072d4b;
+  border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  border: none;
+  padding: 15px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.EmailBage__btn {
+  background: #2f9ff8;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  padding: 10px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* white */
+
+  color: #ffffff;
+}

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import EmailBage from '../components/EmailBage'
 import SearchBar from '../components/SearchBar'
 import SideBar from '../components/SideBar'
 import s from '../styles/app.module.scss'
@@ -25,8 +26,14 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
       <div className={s.app}>
         <SideBar />
         <div className={s.main}>
-          <SearchBar />
-          {children}
+          <div className={s.children}>
+            <SearchBar />
+            {children}
+          </div>
+
+          <div className={s.badges}>
+            <EmailBage />
+          </div>
         </div>
       </div>
     </>
