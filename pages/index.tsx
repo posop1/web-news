@@ -4,11 +4,9 @@ import Layout from '../layouts/Layout'
 
 const Home: FC = () => {
   return (
-    <>
-      <Layout>
-        <NewsList title="Test" />
-      </Layout>
-    </>
+    <Layout>
+      <NewsList title="Test" />
+    </Layout>
   )
 }
 
