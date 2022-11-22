@@ -1,9 +1,7 @@
 import axios from 'axios'
-import { ucs2 } from 'punycode'
-import { GetServerSideProps } from 'next'
 import NewsList from '../components/NewsList'
 import Layout from '../layouts/Layout'
-import { INews } from '../types/types'
+import type { INews } from '../types/types'
 
 interface NewsPagesProps {
   news: INews
@@ -33,7 +31,6 @@ export const getServerSideProps: any = async (context: any) => {
 
 const NewsPages: React.FC<NewsPagesProps> = ({ news, pageName }) => {
   const title = pageName.charAt(0).toUpperCase() + pageName.slice(1)
-  console.log(news)
 
   return (
     <Layout>
