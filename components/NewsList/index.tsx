@@ -3,7 +3,7 @@ import s from './NewsList.module.scss'
 
 interface NewsListProps {
   title: string
-  news: INews
+  news?: INews //fix it
 }
 
 const NewsList: React.FC<NewsListProps> = ({ title, news }) => {
