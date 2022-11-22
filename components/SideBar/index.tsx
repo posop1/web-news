@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import logo from '../../public/logo.svg'
 import { routes } from '../../utils/constans'
 import s from './SideBar.module.scss'
+import SubscribeBage from './SubscribeBage'
 
 const SideBar: React.FC = () => {
   return (
@@ -44,6 +45,7 @@ const SideBar: React.FC = () => {
         ))}
       </div>
       <hr className={s.hr} />
+      <SubscribeBage />
     </div>
   )
 }

@@ -1,0 +1,49 @@
+.Badge {
+  margin-top: 100px;
+
+  background: #2f9ff8;
+  border-radius: 4px;
+  padding: 20px;
+  max-width: 237px;
+  width: 100%;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.badge__title {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}
+.badge__price {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #ffffff;
+
+  span {
+    font-size: 20px;
+  }
+}
+.badge__btn {
+  background: #0768b5;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 10px 27px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+}

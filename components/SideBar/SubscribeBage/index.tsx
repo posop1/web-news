@@ -1,0 +1,24 @@
+import { SlPresent } from 'react-icons/sl'
+import s from './SubscribeBage.module.scss'
+
+const SubscribeBage: React.FC = () => {
+  return (
+    <div className={s.Badge}>
+      <div>
+        <SlPresent
+          size={23}
+          color="white"
+        />
+        <p className={s.badge__title}>Subscribe to Premium</p>
+      </div>
+      <div>
+        <p className={s.badge__price}>
+          $8<span>/m</span>
+        </p>
+        <button className={s.badge__btn}>Upgrade</button>
+      </div>
+    </div>
+  )
+}
+
+export default SubscribeBage
