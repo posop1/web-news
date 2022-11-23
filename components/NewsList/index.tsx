@@ -9,7 +9,10 @@ interface NewsListProps {
 const NewsList: React.FC<NewsListProps> = ({ title, news }) => {
   return (
     <div className={s.news__list}>
-      <h1>{title}</h1>
+      <div className={s.title__container}>
+        <h2 className={s.title}>{title}</h2>
+      </div>
+      <div className={s.list}></div>
     </div>
   )
 }
