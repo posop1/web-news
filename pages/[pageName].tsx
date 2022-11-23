@@ -6,6 +6,7 @@ import type { INews } from '../types/types'
 interface NewsPagesProps {
   news: INews
   pageName: string
+  isLoading: boolean
 }
 
 export const getServerSideProps: any = async (context: any) => {

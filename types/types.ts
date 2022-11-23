@@ -15,7 +15,7 @@ export interface INews {
 
 export interface IArticle {
   author?: string
-  content: string
+  content?: string
   description: string
   source: ISource
   title: string
