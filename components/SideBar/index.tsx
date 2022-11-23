@@ -1,11 +1,10 @@
 import { FiHome } from 'react-icons/fi'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import logo from '../../public/logo.svg'
 import { routes } from '../../utils/constans'
+import SubscribeBage from '../SubscribeBage'
 import s from './SideBar.module.scss'
-import SubscribeBage from './SubscribeBage'
 
 const SideBar: React.FC = () => {
   return (

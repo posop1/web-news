@@ -2,6 +2,7 @@ import Head from 'next/head'
 import EmailBage from '../components/EmailBage'
 import SearchBar from '../components/SearchBar'
 import SideBar from '../components/SideBar'
+import WeatherBadge from '../components/WeatherBadge'
 import s from '../styles/app.module.scss'
 
 interface LayoutProps {
@@ -30,10 +31,10 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
             <SearchBar />
             {children}
           </div>
-
-          <div className={s.badges}>
-            <EmailBage />
-          </div>
+        </div>
+        <div className={s.badges}>
+          <WeatherBadge />
+          <EmailBage />
         </div>
       </div>
     </>
