@@ -1,4 +1,5 @@
 import { INews } from '../../types/types'
+import NewsItem from '../NewsItem'
 import s from './NewsList.module.scss'
 
 interface NewsListProps {
@@ -12,7 +13,20 @@ const NewsList: React.FC<NewsListProps> = ({ title, news }) => {
       <div className={s.title__container}>
         <h2 className={s.title}>{title}</h2>
       </div>
-      <div className={s.list}></div>
+      <div className={s.list}>
+        {news.articles.map(({ author, content, description, source, title, url, urlToImage }) => (
+          <NewsItem
+            key={title}
+            author={author}
+            content={content}
+            description={description}
+            source={source}
+            title={title}
+            url={url}
+            urlToImage={urlToImage}
+          />
+        ))}
+      </div>
     </div>
   )
 }
