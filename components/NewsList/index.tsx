@@ -13,19 +13,25 @@ const NewsList: React.FC<NewsListProps> = ({ title, news }) => {
       <div className={s.title__container}>
         <h2 className={s.title}>{title}</h2>
       </div>
-      <div className={s.list}>
-        {news.articles.map(({ author, content, description, source, title, url, urlToImage }) => (
-          <NewsItem
-            key={title}
-            author={author}
-            description={description}
-            source={source}
-            title={title}
-            url={url}
-            urlToImage={urlToImage}
-          />
-        ))}
-      </div>
+      {news.articles.length === 0 ? (
+        <div className={s.notFound}>
+          <h1>NOT FOUND</h1>
+        </div>
+      ) : (
+        <div className={s.list}>
+          {news.articles.map(({ author, content, description, source, title, url, urlToImage }) => (
+            <NewsItem
+              key={title}
+              author={author}
+              description={description}
+              source={source}
+              title={title}
+              url={url}
+              urlToImage={urlToImage}
+            />
+          ))}
+        </div>
+      )}
     </div>
   )
 }
