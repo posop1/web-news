@@ -30,10 +30,9 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
             <SearchBar />
             {children}
           </div>
-
-          <div className={s.badges}>
-            <EmailBage />
-          </div>
+        </div>
+        <div className={s.badges}>
+          <EmailBage />
         </div>
       </div>
     </>
