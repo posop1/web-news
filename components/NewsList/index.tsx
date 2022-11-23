@@ -18,7 +18,6 @@ const NewsList: React.FC<NewsListProps> = ({ title, news }) => {
           <NewsItem
             key={title}
             author={author}
-            content={content}
             description={description}
             source={source}
             title={title}
