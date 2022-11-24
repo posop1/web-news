@@ -25,8 +25,6 @@ export const getStaticProps = async () => {
 }
 
 const Home: FC<HomePageProps> = ({ news }) => {
-  console.log(news)
-
   return (
     <Layout title="Top News">
       <NewsList

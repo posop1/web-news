@@ -1,0 +1,66 @@
+.WeatherBadge {
+  background: #ffffff;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.hr {
+  opacity: 0.6;
+  border: 0.2px solid #072d4b;
+  margin: 10px 0;
+}
+.country__container {
+  display: flex;
+
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #072d4b;
+  }
+}
+.weather__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+    /* amber black */
+
+    color: #072d4b;
+    margin-bottom: 10px;
+  }
+  span {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+
+    /* amber black */
+
+    color: #072d4b;
+  }
+}
+.temp__type__container {
+  display: flex;
+
+  p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
+    /* amber black */
+
+    color: #072d4b;
+
+    margin-right: 20px;
+  }
+}
