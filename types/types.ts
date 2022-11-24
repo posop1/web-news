@@ -72,6 +72,6 @@ export interface IWeather {
 export interface IWeatherDetail {
   id: number
   main: string
-  descriptions: string
+  description: string
   icon: string
 }
