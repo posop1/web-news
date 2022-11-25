@@ -18,7 +18,7 @@ const SideBar: React.FC = () => {
           alt="logo"
           width="29"
         />
-        <h1 className={s.title}>Aster News</h1>
+        <h1 className={s.title}>А Новости</h1>
       </Link>
       <div className={s.links}>
         <Link
@@ -27,7 +27,7 @@ const SideBar: React.FC = () => {
         >
           <div className={s.link__container}>
             <FiHome size={23} />
-            <p>Top News</p>
+            <p>Популярное</p>
           </div>
         </Link>
         {routes.map((link) => (

@@ -18,7 +18,7 @@ const SearchBar: React.FC<SearchBarProps> = () => {
       <div className={s.bar__inp}>
         <input
           type="text"
-          placeholder="Search for news..."
+          placeholder="Поиск..."
           value={search}
           onChange={handleSearch}
         />
@@ -32,7 +32,7 @@ const SearchBar: React.FC<SearchBarProps> = () => {
         className={s.covid__link}
       >
         <p>
-          Latest news on <span>Covid-19</span>
+          Последние новости про <span>Covid-19</span>
         </p>
 
         <AiOutlineArrowRight />

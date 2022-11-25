@@ -7,7 +7,6 @@
   border-radius: 4px;
   padding: 15px 20px;
   margin-bottom: 30px;
-  gap: 20px;
 }
 .title {
   font-weight: 500;
@@ -34,7 +33,6 @@
 .links {
   display: flex;
   align-items: center;
-  gap: 20px;
   max-width: 400px;
 
   p {
@@ -43,6 +41,7 @@
     line-height: 22px;
     color: #072d4b;
     opacity: 0.4;
+    margin-right: 20px;
   }
   a {
     font-weight: 400;

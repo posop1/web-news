@@ -7,22 +7,22 @@ import { IRoute } from '../types/types'
 export const routes: IRoute[] = [
   {
     route: '/business',
-    name: 'Business',
+    name: 'Бизнес',
     component: MdOutlineBusinessCenter,
-    pageName: 'business'
+    pageName: 'Бизнес'
   },
   {
     route: '/health',
-    name: 'Health',
+    name: 'Здоровье',
     component: MdOutlineHealthAndSafety,
-    pageName: 'health'
+    pageName: 'Здоровье'
   },
   {
     route: '/entertainment',
-    name: 'Entertainment',
+    name: 'Медиа',
     component: FiPlay,
-    pageName: 'entertainment'
+    pageName: 'Медиа'
   },
-  { route: '/sports', name: 'Sports', component: IoMedalOutline, pageName: 'sports' },
-  { route: '/covid', name: 'Covid', component: GiHealthNormal, pageName: 'covid' }
+  { route: '/sports', name: 'Спорт', component: IoMedalOutline, pageName: 'Спорт' },
+  { route: '/covid', name: 'Covid', component: GiHealthNormal, pageName: 'Covid' }
 ]

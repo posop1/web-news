@@ -5,13 +5,13 @@ interface EmailBageProps {}
 const EmailBage: React.FC<EmailBageProps> = () => {
   return (
     <div className={s.EmailBage}>
-      <p className={s.EmailBage__text}>Subscribe to our newsletter</p>
+      <p className={s.EmailBage__text}>Подписка на рассылку новостей</p>
       <input
         type="text"
-        placeholder="Enter Email"
+        placeholder="Email..."
         className={s.EmailBage__inp}
       />
-      <button className={s.EmailBage__btn}>Subscribe</button>
+      <button className={s.EmailBage__btn}>Подключить</button>
     </div>
   )
 }

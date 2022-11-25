@@ -9,13 +9,13 @@ const SubscribeBage: React.FC = () => {
           size={23}
           color="white"
         />
-        <p className={s.badge__title}>Subscribe to Premium</p>
+        <p className={s.badge__title}>Подписка Премиум</p>
       </div>
       <div>
         <p className={s.badge__price}>
-          $8<span>/m</span>
+          130 <span>руб/м</span>
         </p>
-        <button className={s.badge__btn}>Upgrade</button>
+        <button className={s.badge__btn}>Подключить</button>
       </div>
     </div>
   )
